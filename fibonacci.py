@@ -15,11 +15,13 @@ class Fibonacci:
             raise StopIteration
         if self.index == 0:
             self.index += 1
-            return 0
+            return self.a
         elif self.index == 1:
             self.index += 1
-            return 1
+            return self.b 
         else:
-            self.a, self.b = self.b, self.a + self.b
+            next_value = self.a + self.b
+            self.a, self.b = self.b, next_value
             self.index += 1
-            return self.a
+            return next_value
+
