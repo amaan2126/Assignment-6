@@ -2,7 +2,9 @@ class Fibonacci:
     def __init__(self, n):
         if not isinstance(n, int):
             raise ValueError("Fibonacci sequence length must be an integer.")
-        self.n = max(0, n)
+        self.n = n
+        if n < 0:
+            self.n = -1
         self.index = 0
         self.a = 0
         self.b = 1

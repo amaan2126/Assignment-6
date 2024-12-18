@@ -22,3 +22,6 @@ def test_four_value():
 
 def test_ten_value():
     assert list(Fibonacci(10)) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+def test_negative_value():
+    assert list(Fibonacci(-5)) == []
