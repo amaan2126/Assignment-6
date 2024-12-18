@@ -13,3 +13,6 @@ def test_zero_value():
 
 def test_one_value():
     assert list(Fibonacci(1)) == [0, 1]
+
+def test_two_value():
+    assert list(Fibonacci(2)) == [0, 1, 1]
