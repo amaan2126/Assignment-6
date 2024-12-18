@@ -18,7 +18,7 @@ class Fibonacci:
             return self.a
         elif self.index == 1:
             self.index += 1
-            return self.b 
+            return self.b
         else:
             next_value = self.a + self.b
             self.a, self.b = self.b, next_value
