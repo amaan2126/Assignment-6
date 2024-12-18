@@ -9,3 +9,7 @@ def test_non_integer():
 
 def test_zero_value():
     assert list(Fibonacci(0)) == [0]
+
+
+def test_one_value():
+    assert list(Fibonacci(1)) == [0, 1]
